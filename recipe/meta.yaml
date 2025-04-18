@@ -1,5 +1,5 @@
 {% set name = "superpunto" %}
-{% set version = "5.0.0" %}
+{% set version = "5.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/RaulPPelaez/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 60a4d2831489743ee6b488961854a07dc9c3125def46e388769fa0441f846fd1
+  sha256: 1c97230f779eebcf7a1f5917cf6cae21491ea5a1b76a4dd082b93933d4dd5b51
 
 build:
-  script: |  
+  script: |
     cmake -DCMAKE_VERBOSE_MAKEFILE=yes -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH=$PREFIX -G Ninja .
     cmake --build .
     cmake --install .
