@@ -1,5 +1,5 @@
 {% set name = "superpunto" %}
-{% set version = "5.1.1" %}
+{% set version = "5.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/RaulPPelaez/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d1d3e44d50a4ba315d1d44a59365849f4e43266ceb77899ed0f57d1b0375f594
+  sha256: 86b7cd77ff55acf3fce948d1e6a4eb1c4e9a17fc52d2f88000b2111c4c6be040
 
 build:
   script: |
